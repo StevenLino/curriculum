@@ -57,3 +57,11 @@ nav ul {
     justify-content: space-around;
    
 }
+
+section form {
+
+    /* Modelo de diseño en cuadrícula */
+    display: grid;									
+    row-gap: 0.5rem;
+
+}
