@@ -67,10 +67,21 @@ section form {
 }
 
 #resumen{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    height: 24vh;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: space-around;
+    align-items: stretch;
+    grid-template-areas: "A D" 
+                        "B D";
+}
+
+#resumen h2{
+    grid-area: A;
+}
+
+#resumen p{
+    grid-area: B;
+}
+
+#resumen img{
+    grid-area: D;
 }
