@@ -1,7 +1,30 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
+    color: aqua;
+    background-color: black;
 }
+
+#permanente{
+    display:grid;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 4px 2px 8px 2px;
+    padding: 1.5% 0.8%;
+    border: 0.2pt solid #cedddd;
+    -webkit-border-radius: 5px; 
+   /* en navegadores antiguos de Mozilla, 
+   como Firefox.  */
+   -moz-border-radius: 5px;    
+   /* en navegadores modernos. */
+   border-radius: 5px;         
+     /* sombra a un elemento */
+     -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+     -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+}
+
+
 h1{
     /*color: grey;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,22 +73,55 @@ section {
      -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
      box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
   }
+nav{
+    position:sticky;
+    top: 0; /* Ajusta según sea necesario */
+    z-index: 1000; /* Opcional, para que quede sobre otros elementos */
+}
 nav ul {
-
+    list-style-type: none;
     /* Modelo de diseño flexible */
     display: flex;									
     justify-content: space-around;
-   
+    margin: 4px 2px 8px 2px; 
+ 
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd; 
+ 
+    /* relleno (espacio interno) de 
+    1.5% en la parte superior e inferior y 
+    0.8% a los lados derecho e izquierdo. */
+ 
+    padding: 1.5% 0.8%; 
+ 
+    /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
+    dándoles un valor específico de 1.2% para esos lados. */
+ 
+    padding-left: 1.2%; 
+    padding-right: 1.2%; 
+    -webkit-border-radius: 5px; 
+   /* en navegadores antiguos de Mozilla, 
+   como Firefox.  */
+   -moz-border-radius: 5px;    
+   /* en navegadores modernos. */
+   border-radius: 5px;         
+     /* sombra a un elemento */
+     -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+     -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
-
+nav a:visited {
+    color: rgb(165, 10, 165); /* Cambia a morado después de ser visitado */
+}
 section form {
 
     /* Modelo de diseño en cuadrícula */
     display: grid;									
     row-gap: 0.5rem;
-
 }
-
+section a:visited {
+    color: rgb(84, 56, 241); /* Cambia a morado después de ser visitado */
+}
 #resumen{
     display: grid;
     justify-content: space-around;
@@ -85,3 +141,42 @@ section form {
 #resumen img{
     grid-area: D;
 }
+
+
+button{
+    border-radius: 20% 0%;
+    max-width: 300px;
+}
+
+
+#educacion ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+#educacion ul iframe{
+    border-radius: 5%;
+    background-color: aqua;
+    padding: 2px;
+}
+
+/*footer start*/
+footer {
+    text-align: center;
+}
+
+footer a:visited {
+    color: rgb(241, 84, 56); /* Cambia a morado después de ser visitado */
+}
+/*footer end*/
+/*Sección de los mapas terminada*/
+/*Pendiente:
+    -Borrado de comentarios
+    -sección de resumen
+    -Foto de perfil
+    -sección de proyectos
+    -sección de formulario
+    -concordancia con la rúbrica
+    */
