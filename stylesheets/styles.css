@@ -24,11 +24,15 @@
      box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
 
-
 h1{
     font-family: 'Martel Sans', sans-serif;
     text-align: center;
     font-weight: bold;
+    color: cyan;
+    text-shadow: 
+        0 0 5px rgba(0, 188, 212, 0.8), 
+        0 0 10px rgba(0, 188, 212, 0.6), 
+        0 0 15px rgba(0, 188, 212, 0.4); 
 }
 h2{
     font-family:'Roboto',sans-serif;
@@ -44,7 +48,8 @@ p{
   }
 .subtitle {
     /* Color del texto en rgba */
-    color: rgba(254, 255, 250, 0.527);
+    color: rgba(86, 240, 124, 0.808);
+    text-shadow:0 0 15px rgba(17, 209, 11, 0.952);
     /* Transformación del texto a mayúsculas */ 
     text-transform: uppercase; 
 }
