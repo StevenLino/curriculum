@@ -118,8 +118,6 @@ nav a:visited {
     color: rgb(165, 10, 165); /* Cambia a morado después de ser visitado */
 }
 section form {
-
-    /* Modelo de diseño en cuadrícula */
     display: grid;									
     row-gap: 0.5rem;
 }
@@ -165,6 +163,7 @@ input,
 textarea{
     border: 2pt solid #cedddd;
 }
+
 /*footer start*/
 footer {
     text-align: center;
@@ -174,14 +173,6 @@ footer a:visited {
     color: rgb(241, 84, 56); /* Cambia a morado después de ser visitado */
 }
 /*footer end*/
-/*Sección de los mapas terminada*/
-/*Pendiente:
-    -Borrado de comentarios
-    -sección de resumen
-    -sección de proyectos
-    -sección de formulario
-    -concordancia con la rúbrica
-    */
 
 button {
     padding: 10px 20px;
