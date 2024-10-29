@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,
-initial-scale=1.0">
-<title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Mi Currículum Vitae</title>
+        <meta name="keywords" content="desarrollador web, Python, Java, JavaScript
+                                        programación, backend, desarrollo de software,">
+        <meta name="description" content="Desarrollador web en proceso de aprendizaje,
+                                            habilidades en Python y Java, aprendiendo JavaScript y CSS">
+        <meta name="author" content="Steven Lino I.">
+
+        <link rel="stylesheet" href="stylesheets/styles.css">
+
+    </head>
 <body>
     <header id="permanente">
         <h1>Steven Lino I.</h1>
@@ -15,7 +22,6 @@ initial-scale=1.0">
     <nav>
         <ul>
             <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
@@ -23,15 +29,11 @@ initial-scale=1.0">
         </ul>
     </nav>
 <main>
-<section id="resumen">
-<h2>Resumen</h2>
-<p>Soy un estudiante universitario que tiene experiencia en el desarrollo de programas en Java y Python, interesado en el desarrollo y uso de nuevas tecnologías, la mejora continua y el trabajo en equipo</p>
-<img id="photo" src="https://placehold.co/400x400">
-</section>
-<section id="experiencia">
-    <h2 class="subtitle">Experiencia</h2>
-    <p>Al menos <strong>tengo salud</strong>, creo...</p>
-</section>
+    <section id="resumen">
+        <h2 class="subtitle">Acerca de mi</h2>
+        <p>Soy estudiante universitario en la carrera de Computación, con experiencia en el desarrollo de programas en Java y Python. A lo largo de mi trayectoria académica, he participado en diversos proyectos que me han permitido perfeccionar mis habilidades en la escritura de código limpio, legible y reutilizable. Mi objetivo es seguir adquiriendo nuevos conocimientos y fortalecer mis habilidades de comunicación para fomentar un trabajo colaborativo efectivo.</p>
+        <img id="photo" src="xd.png" alt="Mi foto de perfil">
+    </section>
 <section id="educacion">
     <h2 class="subtitle">Educación</h2>
         <ul>
@@ -50,28 +52,42 @@ initial-scale=1.0">
         </ul>
 </section>
 <section id="habilidades">
-    <h2>Habilidades</h2>
+    <h2 class="subtitle">Habilidades</h2>
     <ul>
         <li>Java, Python, Html, Css</li>
         <li>Bases de datos SQL</li>
-        <li>Trabajo en equipo</li>
-        <li>Resolución de problemas</li>
+        <li>GitHub</li>
+        <li>Inglés intermedio</li>
     </ul>
 </section>
 <section id="proyectos">
-    <h2>Proyectos</h2>
+    <h2 class="subtitle">Proyectos</h2>
     <ul>
-    <li><a href="https://github.com/StevenLino/Patrones-de-Dise-o">Patrones de Diseño</a></li>
-    <li><a href="https://github.com/StevenLino/Simulacion-de-Errores-en-la-Transmision">Simulación de errores en la transmisión de datos dentro de una red</a></li>
+        <li><a href="https://github.com/StevenLino/Patrones-de-Dise-o">Patrones de Diseño</a></li>
+        <li><a href="https://github.com/StevenLino/Simulacion-de-Errores-en-la-Transmision">Simulación de errores en la transmisión de datos dentro de una red</a></li>
+        <li>
+            <a id="video" href="https://github.com/KevinJSalazar/Proyecto2-EstructurasDatos">Programa que adivina animales (colaborador)</a>        
+        </li>
     </ul>
+    
+    <video title="Programa que adivina animales" width="500" height="300" controls>
+        <source src="2024-10-29 02-59-53.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
 </section>
 <section id="contacto">
     <form>
-        <h2>Contacto</h2>
+        <h2 class="subtitle">Contacto</h2>
         <label for="nombre">Nombre Completo:</label>
         <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
         <label for="email">Correo Electrónico:</label>
         <input type="email" id="email" name="email" required>
+
         <label for="educacion">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="5"
         required></textarea>
